@@ -1,3 +1,19 @@
+server:
+  servlet:
+    context-path: /
+  port: 8080
+
 spring:
   application:
     name: finance_intelligence
+  datasource:
+    url: jdbc:postgresql://localhost:5432/finance_intelligence_db
+    username: finance_user
+    password: '123456'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    baseline-on-migrate: true
