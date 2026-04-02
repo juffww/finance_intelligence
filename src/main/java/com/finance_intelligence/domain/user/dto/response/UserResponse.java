@@ -1,4 +1,4 @@
-package com.finance_intelligence.domain.dto.response;
+package com.finance_intelligence.domain.user.dto.response;
 
 import com.finance_intelligence.domain.user.entity.User;
 import lombok.Getter;

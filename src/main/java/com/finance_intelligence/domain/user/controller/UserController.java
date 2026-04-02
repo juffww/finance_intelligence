@@ -2,10 +2,10 @@ package com.finance_intelligence.domain.user.controller;
 
 import com.finance_intelligence.common.response.ApiResponse;
 
-import com.finance_intelligence.domain.dto.request.UserCreationRequest;
-import com.finance_intelligence.domain.dto.request.UserUpdateRequest;
-import com.finance_intelligence.domain.dto.response.UserResponse;
-import com.finance_intelligence.domain.mapper.UserMapper;
+import com.finance_intelligence.domain.user.dto.request.UserCreationRequest;
+import com.finance_intelligence.domain.user.dto.request.UserUpdateRequest;
+import com.finance_intelligence.domain.user.dto.response.UserResponse;
+import com.finance_intelligence.domain.user.mapper.UserMapper;
 import com.finance_intelligence.domain.user.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

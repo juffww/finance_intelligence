@@ -3,10 +3,10 @@ package com.finance_intelligence.domain.user.service;
 import com.finance_intelligence.common.exception.AppException;
 import com.finance_intelligence.common.exception.ErrorCode;
 
-import com.finance_intelligence.domain.dto.request.UserCreationRequest;
-import com.finance_intelligence.domain.dto.request.UserUpdateRequest;
-import com.finance_intelligence.domain.dto.response.UserResponse;
-import com.finance_intelligence.domain.mapper.UserMapper;
+import com.finance_intelligence.domain.user.dto.request.UserCreationRequest;
+import com.finance_intelligence.domain.user.dto.request.UserUpdateRequest;
+import com.finance_intelligence.domain.user.dto.response.UserResponse;
+import com.finance_intelligence.domain.user.mapper.UserMapper;
 import com.finance_intelligence.domain.user.entity.User;
 import com.finance_intelligence.domain.user.entity.UserSettings;
 import com.finance_intelligence.domain.user.repository.UserRepository;
