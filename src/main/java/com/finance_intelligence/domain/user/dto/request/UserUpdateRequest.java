@@ -1,4 +1,4 @@
-package com.finance_intelligence.domain.dto.request;
+package com.finance_intelligence.domain.user.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;
