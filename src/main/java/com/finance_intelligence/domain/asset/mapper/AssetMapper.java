@@ -8,6 +8,4 @@ import org.springframework.stereotype.Component;
 @Mapper(componentModel = "spring")
 public interface AssetMapper {
     public AssetResponse toAssetResponse(Asset asset);
-
-
 }
