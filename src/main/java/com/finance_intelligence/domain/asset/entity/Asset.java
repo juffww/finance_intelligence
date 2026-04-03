@@ -1,5 +1,7 @@
 package com.finance_intelligence.domain.asset.entity;
 
+import com.finance_intelligence.domain.asset.entity.enums.AssetType;
+import com.finance_intelligence.domain.asset.entity.enums.PriceCurrency;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,10 +33,14 @@ public class Asset {
     @Column(name = "asset_type", nullable = false, length = 20)
     private AssetType assetType;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "price_currency", nullable = false, length = 3)
+    private PriceCurrency priceCurrency;
+
     @Column(name = "is_active", nullable = false)
-    boolean isActive = true;
+    private boolean isActive = true;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
-    private OffsetDateTime createAt;
+    private OffsetDateTime createdAt;
 }
