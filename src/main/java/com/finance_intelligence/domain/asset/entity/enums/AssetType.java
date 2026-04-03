@@ -1,4 +1,4 @@
-package com.finance_intelligence.domain.asset.entity;
+package com.finance_intelligence.domain.asset.entity.enums;
 
 public enum AssetType {
     stock,
