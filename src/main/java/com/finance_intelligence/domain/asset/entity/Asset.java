@@ -38,7 +38,8 @@ public class Asset {
     private PriceCurrency priceCurrency;
 
     @Column(name = "is_active", nullable = false)
-    private boolean isActive = true;
+    @Builder.Default
+    private boolean active = true;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)

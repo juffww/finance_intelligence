@@ -17,7 +17,6 @@ public class AssetResponse {
     private final String name;
     private final AssetType assetType;
     private final PriceCurrency priceCurrency;
-    @JsonProperty("active") // Ép Jackson dùng tên này trong JSON
-    private final boolean isActive;
+    private final boolean active;
     private OffsetDateTime createdAt;
 }

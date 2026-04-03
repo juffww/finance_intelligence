@@ -18,7 +18,7 @@ public interface AssetRepository extends JpaRepository<Asset, UUID> {
 
     @Query("""
         SELECT a FROM Asset a
-        WHERE a.isActive = true
+        WHERE a.active = true
           AND (a.symbol ILIKE :keyword OR a.name ILIKE :keyword)
         ORDER BY a.symbol ASC
         """)
