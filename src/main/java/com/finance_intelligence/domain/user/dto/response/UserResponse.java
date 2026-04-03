@@ -15,6 +15,6 @@ public class UserResponse {
     private final String email;
     private final String fullName;
     private final String subscriptionTier;
-    private final boolean active;
+    private final boolean isActive;
     private final OffsetDateTime createdAt;
 }
