@@ -20,7 +20,7 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class WatchlistItem {
+public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;

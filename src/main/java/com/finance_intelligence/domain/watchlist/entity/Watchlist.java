@@ -25,13 +25,16 @@ public class Watchlist {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
+    @Column(name = "name", nullable = false, length = 100)
+    private String name;
+
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
     @Builder.Default
     @Column(name = "is_default", nullable = false)
-    private boolean is_default = true;
+    private boolean isDefault = true;
 
     @OneToMany(mappedBy = "watchlist", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<WatchlistItem> watchlistItemList;
+    private List<Item> itemList;
 }
